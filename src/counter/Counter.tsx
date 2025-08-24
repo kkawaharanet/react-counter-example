@@ -1,19 +1,9 @@
-import { useState } from "react";
+import { useCounter } from "./useCounter";
 
 // コンポーネント
 export function Counter() {
   // 状態
-  const [value, setValue] = useState(0);
-
-  // ロジック
-  function increment() {
-    setValue((value) => value + 1);
-  }
-
-  // ロジック
-  function reset() {
-    setValue(() => 0);
-  }
+  const { value, increment, reset } = useCounter();
 
   // ビュー
   return (
