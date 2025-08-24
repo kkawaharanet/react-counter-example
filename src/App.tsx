@@ -1,10 +1,10 @@
+import { use } from "react";
 import { Counter } from "./counter/Counter";
-import { useCounter } from "./counter/useCounter";
+import { CounterContext } from "./counter/CounterContext";
 
 // 画面相当のコンポーネント
 export function App() {
-  // 状態
-  const counter = useCounter();
+  const counter = use(CounterContext);
 
   return (
     <>
