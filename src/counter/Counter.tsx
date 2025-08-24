@@ -1,10 +1,7 @@
-import { useCounter } from "./useCounter";
+import { type ICounter } from "./useCounter";
 
 // コンポーネント
-export function Counter() {
-  // 状態
-  const { value, increment, reset } = useCounter();
-
+export function Counter({ value, increment, reset }: ICounter) {
   // ビュー
   return (
     <>
