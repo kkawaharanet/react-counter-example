@@ -1,6 +1,6 @@
-# react-counter
+# react-counter-example
 
-react-counter はカウンターアプリを題材にした設計例である。
+react-counter-example はカウンターアプリを題材にした設計例である。
 
 ## 記事
 
